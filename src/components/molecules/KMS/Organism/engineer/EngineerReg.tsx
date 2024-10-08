@@ -5,7 +5,6 @@ import { ButtonTwo } from '../../Melecules/engineer/ButtonTwo';
 import { CModal } from '../../Melecules/engineer/CModal';
 import { useEffect, useState } from 'react';
 import { EngineerTable } from './EngineerTable';
-import { Engineer } from '../../../../../../Backend/white-clinic-back/src/whiteClinic/entity/Engineer.entity';
 
 // 상태의 기본값을 지정해줌
 export const EngineerReg = () => {

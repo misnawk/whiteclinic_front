@@ -1,12 +1,13 @@
-import { CheckboxList } from './CheckboxList';
+// import { CheckboxList } from './CheckboxList';
 
-const meta = {
-  title: 'atoms/CheckboxList',
-  component: CheckboxList,
-  argTypes: {},
-};
+// const meta = {
+//   title: 'atoms/CheckboxList',
+//   component: CheckboxList,
+//   argTypes: {},
+// };
 
-export default meta;
-export const Primary = {
-  args: {},
-};
+// export default meta;
+// export const Primary = {
+//   args: {},
+// };
+export {};
