@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-import { engineerName } from '@/constants/definition';
 import { Engineer } from '@/types/Engineer';
 
 type EngineerData = {
