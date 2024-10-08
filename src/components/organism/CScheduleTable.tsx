@@ -5,8 +5,9 @@ import CScheduleTimeLineList from '../molecules/LJW/ShowSchedule/CScheduleTimeLi
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, ThemeProvider, Typography } from '@mui/material';
 import { theme } from '@/constants/theme';
-import { CustomerInfo, engineerInfo, SchInfoModel, TODAY } from '@/constants/definition';
+import { CustomerInfo, engineerInfo, TODAY } from '@/constants/definition';
 import { StyledScheduleTable } from '@/styles/customize';
+import { SchInfoModel } from '@/constants/manageState';
 
 const CScheduleTable = () => {
   // const [selectedDate, setSelectedDate] = useState<Dayjs | null>(TODAY);

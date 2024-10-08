@@ -1,9 +1,9 @@
 import CInput from '@/components/atom/CInput';
 import { SalaryCheckLeftStyle } from '@/styles/customize';
+import { EngineerSalary } from '@/types/EngineerSalary';
 import { Box, Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material';
 import { error } from 'console';
 import { useEffect, useState } from 'react';
-import { EngineerSalary } from '../../../../../../Backend/white-clinic-back/src/whiteClinic/entity/EngineerSalary.entity';
 
 export const SalaryCheckLeft = () => {
   const [isModifiableLeft, setIsModifiableLeft] = useState<boolean[]>([]); //연필 상태관리
