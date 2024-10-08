@@ -1,8 +1,8 @@
 import CInput from '@/components/atom/CInput';
+import { API_ENDPOINTS } from '@/constants/apiEndpoints';
 import { SalaryCheckLeftStyle } from '@/styles/customize';
 import { EngineerSalary } from '@/types/EngineerSalary';
-import { Box, Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material';
-import { error } from 'console';
+import { Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 export const SalaryCheckLeft = () => {
@@ -19,7 +19,7 @@ export const SalaryCheckLeft = () => {
         return;
       }
       try {
-        const response = await fetch(`http://localhost:9090/engineer/salary/${id}`);
+        const response = await fetch(API_ENDPOINTS.FETCH_Salary(+id));
         if (!response.ok) {
           throw new Error('수당정보를 가져오지 못했습니다.');
         }

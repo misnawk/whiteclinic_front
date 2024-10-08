@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { Engineer } from '@/types/Engineer';
+import { API_ENDPOINTS } from '@/constants/apiEndpoints';
 
 type EngineerData = {
   engineers: Engineer[]; //엔지니어의 정보를 담아주는 객체생성
@@ -16,7 +17,7 @@ export const useEngineerStore = create<EngineerData>((set) => ({
   setEngineerName: (engineerNameId) => set({ engineerNameId }),
   fetchEngineer: async () => {
     try {
-      const response = await fetch('http://localhost:9090/engineer/info');
+      const response = await fetch(API_ENDPOINTS.FETCH_Engineer);
       if (!response.ok) {
         throw new Error('에러발생');
       }
