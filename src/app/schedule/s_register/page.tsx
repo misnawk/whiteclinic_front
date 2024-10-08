@@ -1,8 +1,6 @@
-// 'use client';
-// // import CEngineerCardTable from '@/components/organism/CEngineerCardTable';
+'use client';
+// import CEngineerCardTable from '@/components/organism/CEngineerCardTable';
 
-// export default function Page() {
-//   // return <CEngineerCardTable />;
-//   return {};
-// }
-export default {};
+export default function Page() {
+  return <div>뭐지</div>;
+}
