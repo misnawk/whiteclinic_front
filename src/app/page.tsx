@@ -1,10 +1,15 @@
 'use client';
 
-import React from 'react';
+import Login from '@/components/molecules/KMS/login/login';
+import Register from '@/components/molecules/KMS/register/register';
 
-export default function Home() {
+// import CEngineerCardTable from '@/components/organism/CEngineerCardTable';
+
+export default function Page() {
   return (
-    // 홈화면입니다.
-    <main className="flex min-h-screen flex-col p-6">HOME 화면입니다</main>
+    <div>
+      <Login />
+      <Register />
+    </div>
   );
 }
