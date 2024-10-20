@@ -31,6 +31,7 @@ export default function Login() {
 
   return (
     <div>
+      <p>로그인 인증 토큰을 검증하고 있습니다.</p>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">아이디:</label>
         <input
